@@ -8,8 +8,8 @@
 1. Сгенерируйте секретный ключ(SECRET_KEY), и сохраните его в файле `.env'
 2. Сделайте следующие команды:
     ```sh
-    bash python manage.py makemigrations
-    bash python manage.py migrate
-    bash python manage.py loaddata data.json
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py loaddata data.json
     ```
 3. Запустите сервер с помощью команды `python manage.py runserver`.
