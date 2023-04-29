@@ -8,7 +8,7 @@ class Menu(models.Model):
 class MenuItem(models.Model):
     title = models.CharField(max_length=255)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children', on_delete=models.CASCADE)
-    menu = models.ForeignKey(Menu, blank=True, on_delete=models.CASCADE, related_name='items')
+    menu = models.ForeignKey(Menu, null=True, blank=True, on_delete=models.CASCADE, related_name='items')
     url = models.CharField(max_length=255)
 
     def __str__(self):
