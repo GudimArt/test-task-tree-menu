@@ -6,7 +6,7 @@
 3. Установите зависимости, используя команду `pip install -r requirements.txt` 
 ## Использование
 1. Сгенерируйте секретный ключ(SECRET_KEY), и сохраните его в файле `.env'
-2. Сделайте следующие команды:
+2. Выполните следующие команды:
     ```sh
     python manage.py makemigrations
     python manage.py migrate
